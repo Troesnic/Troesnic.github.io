@@ -29,7 +29,8 @@
             <h2>Calendario de Reuniones</h2>
             <p>Consulta nuestras reuniones semanales organizadas por día.</p>
     
-            <div class="table-responsive">
+            <!-- Tabla (Visible en pantallas grandes) -->
+            <div class="table-responsive d-none d-md-block">
                 <table class="table table-bordered">
                     <thead class="table-primary">
                         <tr>
@@ -71,7 +72,7 @@
                             <td>
                                 <div class="evento">
                                     <i class="fas fa-users"></i>
-                                    <p><strong>Reunión de Jóvenes</strong></p>
+                                    <p><strong> Reunión de Jóvenes</strong></p>
                                     <p>17:30 hrs</p>
                                 </div>
                             </td>
@@ -91,8 +92,64 @@
                     </tbody>
                 </table>
             </div>
+    
+            <!-- Lista (Visible en pantallas pequeñas) -->
+            <div class="d-md-none">
+                <div class="lista-eventos">
+                    <div class="dia">
+                        <h4>Lunes</h4>
+                        <div class="evento">
+                            <i class="fas fa-book"></i>
+                            <p><strong>Instituto Bíblico Bet-el</strong></p>
+                            <p>20:00 hrs - Presencial</p>
+                        </div>
+                    </div>
+    
+                    <div class="dia">
+                        <h4>Martes</h4>
+                        <div class="evento">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                            <p><strong>Discipulado</strong></p>
+                            <p>20:00 hrs</p>
+                        </div>
+                    </div>
+    
+                    <div class="dia">
+                        <h4>Jueves</h4>
+                        <div class="evento">
+                            <i class="fas fa-church"></i>
+                            <p><strong>Reunión General</strong></p>
+                            <p>20:00 hrs</p>
+                        </div>
+                    </div>
+    
+                    <div class="dia">
+                        <h4>Sábado</h4>
+                        <div class="evento">
+                            <i class="fas fa-users"></i>
+                            <p><strong>Reunión de Jóvenes</strong></p>
+                            <p>17:30 hrs</p>
+                        </div>
+                    </div>
+    
+                    <div class="dia">
+                        <h4>Domingo</h4>
+                        <div class="evento">
+                            <i class="fas fa-calendar-day"></i>
+                            <p><strong>Reunión General AM</strong></p>
+                            <p>10:30 hrs</p>
+                        </div>
+                        <div class="evento">
+                            <i class="fas fa-calendar-day"></i>
+                            <p><strong>Reunión General PM</strong></p>
+                            <p>19:00 hrs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    
     
     <section class="map">
         <div class="container">
