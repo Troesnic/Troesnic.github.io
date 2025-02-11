@@ -303,6 +303,57 @@
     margin-left: 5px;
 }
 
+.calendario {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.calendario h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.calendario p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.table {
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+.table td {
+    height: 150px;
+    vertical-align: middle;
+}
+
+.evento {
+    background: #eef4ff;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.evento i {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+
+
 @media(max-width:767px){
     .carousel-item{
         min-height: 500px;
