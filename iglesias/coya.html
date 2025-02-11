@@ -9,49 +9,9 @@
     <title>Casa De Dios</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-ligth bg-light fixed-top">
-        <div class="container">
-            <a href="/index.html" class="navbar-brand"><span class="text-primary">Casa de </span>Dios</a>
-            <button class="navbar-toggler" type="button" 
-                data-bs-toggle="collapse" data-bs-target="#navbar-start"
-                aria-controls="navbar-start" aria-expanded="false" 
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar-start">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">Nosotros</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Nuestros Templos
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><hr class="dropdown-divider">REGIÓN METROPOLITANA</li>
-                            <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="/iglesias/sanmiguel.html">San Miguel</a></li>
-                          <li><a class="dropdown-item" href="/iglesias/matta.html">Matta</a></li>
-                          <li><hr class="dropdown-divider">REGIÓN DE VALPARAÍSO</li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="/iglesias/limache.html">Limache</a></li>
-                          <li><hr class="dropdown-divider">REGIÓN DE O'HIGGINS</li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="/iglesias/coya.html">Coya</a></li>
-
-                        </ul>
-                      </li>
-                    <li>
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
+    <div id="navbar-container"></div>
+    <script src="/navbar/navbar.js"></script>
+    
     <div id="carouselE1" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -124,10 +84,8 @@
         </div>
     </section>
 
-    <footer class="bg-dark p-2 text-center">
-        <div class="container">
-            <p class="text-white">Todos los derechos reservados</p>
-        </div>
+    <footer class="bg-dark text-center text-white py-3">
+        <p>&copy; 2025 Casa de Dios. Todos los derechos reservados.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

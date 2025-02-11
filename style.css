@@ -3,43 +3,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/*navbar*/
-.navbar a{
-    font-weight: 600;
-    font-size: 18px;
-}
-
-/* Cambiar el fondo del menú desplegable */
-.dropdown-menu {
-    background-color: #f8f9fa; /* Color gris claro */
-    border: 1px solid #ddd;
-}
-
-/* Estilo para los títulos de región */
-.dropdown-menu li {
-    color: #004085; /* Azul oscuro */
-    font-weight: bold;
-    padding: 8px 15px;
-}
-
-/* Cambiar color del divisor */
-.dropdown-divider {
-    border-top: 2px solid #007bff; /* Azul */
-}
-
-/* Cambiar color de los enlaces */
-.dropdown-item {
-    color: #343a40; /* Gris oscuro */
-    padding: 10px 15px;
-}
-
-/* Cambiar color de fondo al pasar el mouse */
-.dropdown-item:hover {
-    background-color: #007bff; /* Azul */
-    color: white;
-}
-
-
 /*carousel y derivados*/
 .carousel-item{
     min-height: 400px;
@@ -145,7 +108,7 @@
 .banner {
     position: relative;
     width: 100%;
-    height: 600px; /* Ajusta la altura según necesites */
+    height: 400px; /* Ajusta la altura según necesites */
     background-image: url(/img/banner.jpg);
     background-size: cover;
     background-position: center;
@@ -154,12 +117,13 @@
     justify-content: center;
     color: white;
     text-align: center;
+    margin-top: 60px;
 }
 
 .overlay {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Oscurece la imagen para que el texto resalte */
+    background: rgba(0, 0, 0, 0.5); /* Oscurece la imagen para que el texto resalte */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -171,7 +135,7 @@
     font-weight: bold;
 }
 
-.banner h1 span{
+.banner h1 img{
     color: #007bff;
 }
 
@@ -216,48 +180,6 @@
     height: 450px;
     border: none;
 }
-
-/* Estilos base */
-.contact {
-    text-align: center;
-    padding: 20px;
-}
-
-form {
-    border-radius: 10px;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-/* Estilos cuando hay error */
-
-
-input:valid, textarea:valid {
-    border-color: green;
-}
-
-/* Mensajes de error ocultos por defecto */
-.error-message {
-    display: none;
-    font-size: 14px;
-    color: red;
-    margin-top: 5px;
-}
-
-/* Mostrar mensaje de error si el campo está vacío */
-input:invalid + .error-message,
-textarea:invalid + .error-message {
-    display: block;
-}
-
-
 
 .reuniones {
     padding: 50px 0;

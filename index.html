@@ -4,60 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/img/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Casa De Dios</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-ligth bg-light fixed-top">
-        <div class="container">
-            <a href="/index.html" class="navbar-brand"><span class="text-primary">Casa de </span>Dios</a>
-            <button class="navbar-toggler" type="button" 
-                data-bs-toggle="collapse" data-bs-target="#navbar-start"
-                aria-controls="navbar-start" aria-expanded="false" 
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar-start">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">Nosotros</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Nuestros Templos
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><hr class="dropdown-divider">REGIÓN METROPOLITANA</li>
-                            <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="/iglesias/sanmiguel.html">San Miguel</a></li>
-                          <li><a class="dropdown-item" href="/iglesias/matta.html">Matta</a></li>
-                          <li><hr class="dropdown-divider">REGIÓN DE VALPARAÍSO</li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="/iglesias/limache.html">Limache</a></li>
-                          <li><hr class="dropdown-divider">REGIÓN DE O'HIGGINS</li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="/iglesias/coya.html">Coya</a></li>
-
-                        </ul>
-                      </li>
-                    <li>
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="navbar-container"></div>
+    <script src="/navbar/navbar.js"></script>
 
     <section class="banner">
         <div class="overlay">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-left">
-                        <h1 class="banner-title">Iglesia <span>Casa de Dios</span></h1>
+                        <h1><img src="/img/logo_derecha_recto.png" width="600px" alt="Logo Casa de Dios"></h1>
                     </div>
                     <div class="col-md-6 text-right">
                         <p class="banner-text">
@@ -69,9 +30,7 @@
                 </div>
             </div>
         </div>
-    </section>
-    
-    
+    </section> 
 
     <section class="event-section">
         <div class="container">
@@ -80,7 +39,7 @@
                 <div class="col-12 col-md-12 col-lg-4 mb-3">
                     <div class="event-card">
                         <div class="event-card-body">
-                            <h3 class="event-title">Canal de YouTube</h3>
+                            <h3 class="event-title"><i class="bi bi-youtube"></i> Canal de YouTube</h3>
                             <p>Suscríbete a nuestro canal de YouTube</p>
                             <iframe width="100%" height="380" src="https://www.youtube.com/embed/5ZV_fIDkMrQ" frameborder="0" allowfullscreen></iframe>
                             <a href="https://www.youtube.com/@casadediosconociendolapalabrad"  target="_blank" class="event-btn primary">Ver Canal</a>
@@ -92,7 +51,7 @@
                 <div class="col-12 col-md-12 col-lg-4 mb-3">
                     <div class="event-card">
                         <div class="event-card-body">
-                            <h3 class="event-title">Instagram de Jóvenes</h3>
+                            <h3 class="event-title"><i class="bi bi-instagram"></i> Instagram de Jóvenes</h3>
                             <p>Síguenos en nuestra página de Instragram donde nuestros jóvenes comparten sus actividades y anuncian eventos especiales</p>
                             <iframe src="https://www.instagram.com/p/C5MzLVXMJbr/embed/" width="100%" height="380"></iframe>
                             <a href="https://www.instagram.com/jovenescasadedios._/" target="_blank" class="event-btn primary">Ver Instagram</a>
@@ -189,62 +148,15 @@
                 <span class="visually-hidden">Siguiente</span>
         </button>
     </div>
-
+    
     <section class="contact">
-        <div class="container mb-3 mb-lg-5">
-            <div class="row">
-                <div class="col-mb-12">
-                    <div class="secction-header text-center pb-2 pb-lg-5">
-                        <h2>Contacto</h2>
-                        <p>Envíanos tu mensaje y te responderemos lo antes posible.</p>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="d-flex justify-content-center">
-                <div class="col-12 col-mb-12 col-lg-6 pt-4 pb-4">
-                    <form id="contact-form" class="bg-light p-4 m-auto shadow-sm" novalidate>
-                        <div class="row">
-                            <!-- Campo Nombre -->
-                            <div class="col-md-12">
-                                <div class="mb-3">
-                                    <input id="name" name="user_name" class="form-control" placeholder="Nombre" type="text" required>
-                                    <span class="error-message" style="display: none; color: red; font-size: 14px;">Este campo es obligatorio.</span>
-                                </div>
-                            </div>
-    
-                            <!-- Campo Email -->
-                            <div class="col-md-12">
-                                <div class="mb-3">
-                                    <input id="email" name="user_email" class="form-control" placeholder="Email" type="email" required>
-                                    <span class="error-message" style="display: none; color: red; font-size: 14px;">Este campo es obligatorio.</span>
-                                </div>
-                            </div>
-    
-                            <!-- Campo Mensaje -->
-                            <div class="col-md-12">
-                                <div class="mb-3">
-                                    <textarea id="message" name="message" class="form-control" placeholder="Dejanos tu mensaje" rows="3" required></textarea>
-                                    <span class="error-message" style="display: none; color: red; font-size: 14px;">Este campo es obligatorio.</span>
-                                </div>
-                            </div>
-    
-                            <button class="btn btn-primary btn-lg btn-block mt-3" type="submit">Enviar</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+        <iframe src="/contacto/contactanos.html" width="100%" height="250px" style="border: none;"></iframe>
     </section>
     
-
-    <footer class="bg-dark p-2 text-center">
-        <div class="container">
-            <p class="text-white">Todos los derechos reservados</p>
-        </div>
+    <footer class="bg-dark text-center text-white py-3">
+        <p>&copy; 2025 Casa de Dios. Todos los derechos reservados.</p>
     </footer>
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="/script.js"></script>
+    
 </body>
 </html>
